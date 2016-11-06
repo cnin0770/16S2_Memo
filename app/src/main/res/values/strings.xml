@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ToDoList</string>
+    <string name="add_new">ADD NEW</string>
+    <string name="dialog_delete_title">Delete an item</string>
+    <string name="dialog_delete_msg">Do you want to delete this item?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="new_memo">New Item</string>
+    <string name="quit_edit">Quit Editing</string>
+    <string name="dialog_ed_delete_msg">Are you sure to give up this edit? Your unsaved edit will be discarded by click YES.</string>
+    <string name="yes">Yes</string>
+    <string name="edad_label">Edit/Add Item</string>
+    <string name="listViewOn">List View</string>
+    <string name="gridViewOn">Grid View</string>
+
+    <string-array name="image_ids">
+        <item>@drawable/pic1</item>
+        <item>@drawable/pic2</item>
+        <item>@drawable/pic3</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+</resources>

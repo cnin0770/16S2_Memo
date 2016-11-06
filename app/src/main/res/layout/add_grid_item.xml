@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    android:weightSum="1">
+
+    <EditText
+        android:layout_width="217dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_above="@+id/saveBTN"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/saveBTN"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/cancelBTN"
+        android:onClick="onCancel"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Location:"-->
+        <!--android:id="@+id/textView"-->
+        <!--android:layout_above="@+id/takePhotoBTN"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true" />-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take Photo"
+        android:id="@+id/takePhotoBTN"
+        android:onClick="onTakePhotoClick"
+        android:layout_above="@+id/cancelBTN"
+        android:layout_alignRight="@+id/cancelBTN"
+        android:layout_alignEnd="@+id/cancelBTN" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignRight="@+id/takePhotoBTN"
+        android:layout_alignEnd="@+id/takePhotoBTN"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/locationOutput" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/locationOutput"
+        android:layout_above="@+id/takePhotoBTN"
+        android:layout_alignRight="@+id/takePhotoBTN"
+        android:layout_alignEnd="@+id/takePhotoBTN"
+        android:layout_below="@+id/imageView"
+        android:layout_toRightOf="@+id/saveBTN"
+        android:layout_toEndOf="@+id/saveBTN" />
+
+</RelativeLayout>
